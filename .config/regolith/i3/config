@@ -284,7 +284,7 @@ gaps inner $i3-wm.gaps.inner.size
 gaps outer $i3-wm.gaps.outer.size
 
 # Only enable gaps on a workspace when there is at least one container
-# smart_gaps on
+# smart_gaps off
 
 # Create variables from Xresources for i3's look.
 set_from_resource $focused.color.border i3-wm.client.focused.color.border "#002b36"
@@ -359,26 +359,27 @@ set_from_resource $i3-wm.bar.stripworkspacenumbers i3-wm.bar.stripworkspacenumbe
 set_from_resource $i3-wm.i3xrocks.config i3-wm.i3xrocks.config "/etc/regolith/i3xrocks/config"
 
 # The bar configuration
-bar {
-  position $i3-wm.bar.position
-  font $i3-wm.bar.font
-  separator_symbol $i3-wm.bar.separator
-  status_command i3xrocks -c $i3-wm.i3xrocks.config
-  tray_output $i3-wm.bar.trayoutput
-  strip_workspace_numbers $i3-wm.bar.stripworkspacenumbers
-
-  colors {
-      background $i3-wm.bar.background.color
-      statusline $i3-wm.bar.statusline.color
-      separator  $i3-wm.bar.separator.color
-
-#                        BORDER  BACKGROUND TEXT
-      focused_workspace  $i3-wm.bar.workspace.focused.border.color      $i3-wm.bar.workspace.focused.background.color   $i3-wm.bar.workspace.focused.text.color
-      active_workspace   $i3-wm.bar.workspace.active.border.color       $i3-wm.bar.workspace.active.background.color    $i3-wm.bar.workspace.active.text.color
-      inactive_workspace $i3-wm.bar.workspace.inactive.border.color     $i3-wm.bar.workspace.inactive.background.color  $i3-wm.bar.workspace.inactive.text.color
-      urgent_workspace   $i3-wm.bar.workspace.urgent.border.color       $i3-wm.bar.workspace.urgent.background.color    $i3-wm.bar.workspace.urgent.text.color
-  }
-}
+exec --no-startup-id $HOME/.config/polybar/launch.sh
+#bar {
+#  position $i3-wm.bar.position
+#  font $i3-wm.bar.font
+#  separator_symbol $i3-wm.bar.separator
+#  status_command i3xrocks -c $i3-wm.i3xrocks.config
+#  tray_output $i3-wm.bar.trayoutput
+#  strip_workspace_numbers $i3-wm.bar.stripworkspacenumbers
+#
+#  colors {
+#      background $i3-wm.bar.background.color
+#      statusline $i3-wm.bar.statusline.color
+#      separator  $i3-wm.bar.separator.color
+#
+##                        BORDER  BACKGROUND TEXT
+#      focused_workspace  $i3-wm.bar.workspace.focused.border.color      $i3-wm.bar.workspace.focused.background.color   $i3-wm.bar.workspace.focused.text.color
+#      active_workspace   $i3-wm.bar.workspace.active.border.color       $i3-wm.bar.workspace.active.background.color    $i3-wm.bar.workspace.active.text.color
+#      inactive_workspace $i3-wm.bar.workspace.inactive.border.color     $i3-wm.bar.workspace.inactive.background.color  $i3-wm.bar.workspace.inactive.text.color
+#      urgent_workspace   $i3-wm.bar.workspace.urgent.border.color       $i3-wm.bar.workspace.urgent.background.color    $i3-wm.bar.workspace.urgent.text.color
+#  }
+#}
 
 # The following exec calls run programs in the background when i3 starts.
 
