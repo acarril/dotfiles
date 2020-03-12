@@ -384,7 +384,8 @@ exec --no-startup-id $HOME/.config/polybar/launch.sh
 # The following exec calls run programs in the background when i3 starts.
 
 # Start the installed regolith-compositor
-exec --no-startup-id /usr/share/regolith-compositor/init
+# exec --no-startup-id /usr/share/regolith-compositor/init
+exec --no-startup-id /usr/bin/compton -f --respect-prop-shadow --config ~/.config/compton/config
 
 # Start Rofication for notifications
 exec --no-startup-id /usr/share/rofication/rofication-daemon.py
