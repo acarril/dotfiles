@@ -5,6 +5,7 @@
 !.gitignore
 !.Xresources.d/*
 !.config/regolith/*
+!.config/compton/*
 !.Xresources.regolith
 !.antigenrc
 !.zshrc
