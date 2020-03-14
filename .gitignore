@@ -10,3 +10,4 @@
 !.antigenrc
 !.zshrc
 !.config/polybar/*
+!.config/polybar-forecast/config.toml
