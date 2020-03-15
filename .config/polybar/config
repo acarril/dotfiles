@@ -61,9 +61,9 @@ font-3 = Material Icons:pixelsize=12;3
 ; font-4 = Material Design Icons:size=12;1
 ; font-5 = FontAwesome:size=10:antialias=true;1
 
-modules-left = xwindow
-modules-center = i3
-modules-right = wlan pulseaudio battery weather time date sep
+modules-left = i3 sep xwindow
+modules-center =
+modules-right = xkeyboard wlan pulseaudio battery weather time date sep
 
 ; Position of the system tray window
 ; If empty or undefined, tray support will be disabled
@@ -127,11 +127,11 @@ label =  %title:0:120:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
 
-label-layout = %layout%
+label-layout = %name%
 <!-- label-layout-underline = ${colors.secondary} -->
 
 label-indicator-padding = 2
@@ -401,16 +401,16 @@ format-full-prefix = "ﮣ "
 format-full-prefix-foreground = ${colors.foreground-alt}
 <!-- ;format-full-underline = ${self.format-charging-underline} -->
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
-ramp-capacity-5 = 
-ramp-capacity-6 = 
-ramp-capacity-7 = 
-ramp-capacity-8 = 
-ramp-capacity-9 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
 animation-charging-0 = 
