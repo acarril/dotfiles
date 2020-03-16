@@ -37,6 +37,10 @@ hide_edge_borders smart
 ## Launch // Terminal // <Super> Enter ##
 bindsym $mod+Return exec /usr/bin/x-terminal-emulator
 
+## Launch // Terminal (Floating) // <Super> Enter ##
+bindsym $mod+Ctrl+Return exec /usr/bin/x-terminal-emulator -n Floater
+for_window [class="St" instance="Floater"] floating enable
+
 ## Launch // Browser // <Super><Shift> Enter ##
 bindsym $mod+Shift+Return exec gtk-launch $(xdg-settings get default-web-browser)
 

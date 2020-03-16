@@ -63,7 +63,7 @@ font-3 = Material Icons:pixelsize=12;3
 
 modules-left = i3 sep xwindow
 modules-center =
-modules-right = xkeyboard wlan pulseaudio battery weather time date sep
+modules-right = xkeyboard wlan pulseaudio battery weather time date
 
 ; Position of the system tray window
 ; If empty or undefined, tray support will be disabled
